@@ -1,0 +1,19 @@
+.Toggler .reaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Toggler .reaction span {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    user-select: none;
+    cursor: pointer;
+}
+.Toggler .reaction h3 {
+    color: crimson;
+}

@@ -1,0 +1,64 @@
+.ColorBox {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.ColorBox .box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    user-select: none;
+}
+.ColorBox .box1 {
+    backface-visibility: hidden;
+    rotate: y 0deg;
+    transition: rotate 1s ease;
+    z-index: 1;
+}
+.ColorBox .box2 {
+    backface-visibility: hidden;
+    rotate: y 0deg;
+    transition: rotate 1s ease;
+    z-index: 1;
+}
+ 
+.rotated {
+    rotate: y 180deg !important;
+    z-index: 0 !important;
+    transition: rotate 1s ease;
+} 
+
+/* .back {
+    transform: translateY(90deg);
+    animation: go-back 2s linear 0s 1;
+    transition: rotate 1s ease;
+}
+.front {
+    animation: go-front 2s linear 0s 1;
+    transition: rotate 1s ease;
+}
+
+@keyframes go-back {
+    0% {
+        rotate: y 0deg;
+    }
+    50% {
+        rotate: y 90deg;
+    }
+    100% {
+        z-index: 0;
+    }
+}
+@keyframes go-front {
+    0% {
+        rotate: y 90deg;
+    }
+    50% {
+        rotate: y 0deg;
+    }
+    100% {
+        z-index: 1;
+    }
+} */
