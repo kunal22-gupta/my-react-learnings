@@ -1,9 +1,9 @@
-import AddEmote from "./AddEmote";
+import Input from "./React_Forms/Input";
 import "./App.css";
 function App() {
   return (
     <>
-      <AddEmote/>
+      <Input/>
     </>
   );
 }
