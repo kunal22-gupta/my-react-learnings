@@ -1,9 +1,10 @@
-import SignUpForm from './React_Forms/SignUpForm'
+
 import "./App.css";
+import ShoppingList from "./React_Forms/ShoppingList";
 function App() {
   return (
     <>
-      <SignUpForm />
+    <ShoppingList/>
     </>
   );
 }
