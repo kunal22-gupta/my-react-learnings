@@ -1,0 +1,34 @@
+.ShoppingListForm {
+    border-top: 1px solid grey;
+    margin-top: 1em;
+    padding: 2em 0;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.ShoppingListForm input {
+    border-radius: 5px;
+}
+.ShoppingListForm > .row {
+    display: flex;
+    gap: 1em;
+}
+.ShoppingListForm > .row .col {
+    flex-direction: column;
+    display: flex;
+}
+.ShoppingListForm > .row .col:nth-child(2) input {
+    width: 50px;
+}
+.ShoppingList button {
+    background-color: rgb(95, 158, 160);
+    color: white;
+    border: none;
+    transition: all 0.2s;
+}
+.ShoppingList button:hover {
+    border: none;
+    background-color: rgb(52, 120, 122);
+    color: white;
+}

@@ -1,3 +1,5 @@
+import "./ShoppingList.css"
+
 import ShortUniqueId from "short-unique-id";
 import ShoppingListForm from "./ShoppingListForm"
 import { useState } from "react"
@@ -20,7 +22,7 @@ export default function ShoppingList() {
             <ul>
                 {
                     itemsList.map((item) => {
-                        return (<li key={item.id}>{item.product} - {item.qty}</li>)
+                        return (<li key={item.id}><span>&#x1f4cc; {item.product}</span>  <span>x{item.qty}</span></li>)
                     })
                 }
             </ul>

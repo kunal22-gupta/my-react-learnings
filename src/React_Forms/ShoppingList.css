@@ -1,0 +1,9 @@
+.ShoppingList {
+    border: 1px solid grey;
+    padding: 0 3em;
+    box-shadow: 10px 10px;
+}
+.ShoppingList ul li {
+    display: flex;
+    justify-content: space-between;
+}
