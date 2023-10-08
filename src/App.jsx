@@ -1,9 +1,9 @@
-import Input from "./React_Forms/Input";
+import SignUpForm from './React_Forms/SignUpForm'
 import "./App.css";
 function App() {
   return (
     <>
-      <Input/>
+      <SignUpForm />
     </>
   );
 }
