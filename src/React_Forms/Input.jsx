@@ -8,6 +8,7 @@ export default function Input() {
     const [inputVal, setInputVal] = useState("");
     return (
         <form className="Input">
+            <label htmlFor="name" style={{fontSize: "1.3em"}}>Enter you name </label>
             <input
                 type="text"
                 name="name"
