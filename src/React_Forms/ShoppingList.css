@@ -3,7 +3,24 @@
     padding: 0 3em;
     box-shadow: 10px 10px;
 }
+.ShoppingList ul {
+    padding-left: 0;
+}
 .ShoppingList ul li {
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
+}
+.ShoppingList ul li::before {
+    content: '->';
+    position: absolute;
+    left: 0;
+}
+.ShoppingList ul li:hover {
+    background-color: rgb(95, 158, 160, 0.5);
+}
+.ShoppingList ul li:hover::before {
+    content: '❌';
 }
