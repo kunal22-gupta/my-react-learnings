@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function ShoppingListForm({setItemsList}) {
-    const [item, setItem] = useState({product: "", qty: ""})
+export default function ShoppingListForm({setItemsList, uid}) {
+    const [item, setItem] = useState({id: uid.rnd, product: "", qty: ""})
 
     const updateForm = (e) => {
         setItem((currItem) => {
@@ -15,7 +15,7 @@ export default function ShoppingListForm({setItemsList}) {
             return [...currItemsList, {...item}]
         })
         // Reset the form
-        setItem({product: "", qty: ""})
+        setItem({id: uid.rnd(), product: "", qty: ""})
     }
     return (
         <form onSubmit={handleSubmit} className="ShoppingListForm">

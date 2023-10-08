@@ -1,10 +1,13 @@
+import ShortUniqueId from "short-unique-id";
 import ShoppingListForm from "./ShoppingListForm"
 import { useState } from "react"
 
 export default function ShoppingList() {
+
+    const uid = new ShortUniqueId()
     const [itemsList, setItemsList] = useState([
-        {product: "Apples", qty: 5},
-        {product: "Bananas", qty: 4}
+        {id: uid.rnd(), product: "Apples", qty: 5},
+        {id: uid.rnd(), product: "Bananas", qty: 4}
     ])
     // const addItem = (item) => {
     //     setItems((itemsList) => {
@@ -17,11 +20,11 @@ export default function ShoppingList() {
             <ul>
                 {
                     itemsList.map((item) => {
-                        return (<li>{item.product} - {item.qty}</li>)
+                        return (<li key={item.id}>{item.product} - {item.qty}</li>)
                     })
                 }
             </ul>
-            <ShoppingListForm setItemsList={setItemsList}/>
+            <ShoppingListForm setItemsList={setItemsList} uid={uid}/>
         </div>
     )
 }
