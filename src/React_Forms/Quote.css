@@ -1,0 +1,13 @@
+.Quote .spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid rgb(233, 233, 233);
+    border-top: 10px solid rgb(99, 100, 100);
+    border-radius: 50%;
+    animation: spin 2s linear infinite ;
+    margin: 2em;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

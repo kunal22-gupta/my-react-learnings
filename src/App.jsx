@@ -1,10 +1,10 @@
 
 import "./App.css";
-import ShoppingList from "./React_Forms/ShoppingList";
+import Quote from "./React_Forms/Quote";
 function App() {
   return (
     <>
-    <ShoppingList/>
+    <Quote/>
     </>
   );
 }
