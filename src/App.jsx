@@ -1,10 +1,15 @@
-
+import UserContextProvider from "./Context/UserContextProvider";
 import "./App.css";
-import Quote from "./React_Forms/Quote";
+import Login from "./Login";
+import Profile from "./Profile";
+
 function App() {
   return (
     <>
-    <Quote/>
+      <UserContextProvider>
+        <Login/>
+        <Profile/>
+      </UserContextProvider>
     </>
   );
 }
